@@ -28,12 +28,13 @@ function AtlasLoot_GetEnchantLink(enchantID)
       EnchantLink = GetSpellLink(enchantID)
    end
    AtlasLootScanTooltip:Hide()
-
-	if EnchantLink ~= nil then
+   
+   if EnchantLink ~= nil then
 		return EnchantLink
-	else	
-		return "|cff71d5ff|Hspell:"..enchantID..":0|h[]|h|r"		
-	end
+   else
+		return "|cff71d5ff|Hspell:"..enchantID..":0|h[]|h|r"
+   end
+   
 end
 
 --------------------------------------------------------------------------------
